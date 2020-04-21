@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<body>
+<!-- The Areas
+  Then add the clickable areas. A clickable area is defined using an <area> element. -->
+<h2>Image Maps</h2>
+<p>Click on the computer, to go to a new page and read more about the topic:</p>
+
+<img src="workplace.jpg" alt="Workplace" usemap="#workmap" width="400" height="379">
+<!-- Shape
+You must define the shape of the area, and you can choose one of these values:rect - defines a rectangular region
+circle - defines a circular region, poly - defines a polygonal region, default - defines the entire region -->
+<map name="workmap">
+  <area shape="rect" coords="34,44,270,350" alt="Computer" href="computer.htm">
+</map>
+<!-- Coordinates
+You must define some coordinates to be able to place the clickable area onto the image.
+The coordinates come in pairs, one for the x-axis and one for the y-axis.
+The coordinates 34, 44 is located 34 pixels from the left margin and 44 pixels from the top
+The coordinates 270, 350 is located 270 pixels from the left margin and 350 pixels from the top
+Now you have enough data to create a clickable rectangular area -->
+</body>
+</html>

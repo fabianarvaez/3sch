@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html>
+<body>
+<!-- The idea behind an image map is that you should be able to perform
+  different actions depending on where in the image you click.
+  To create an image map you need an image, and a map containing some rules that describe the clickable areas. -->
+
+
+<h2>Image Maps</h2>
+<p>Click on the computer, the phone, or the cup of coffee to go to a new page and read more about the topic</p>
+<!-- The image is inserted using the <img> tag.
+  The only difference from other images is that you must add a usemap attribute -->
+<img src="/home/fabian/Documentos/cursos_prog_mia/3schools/img_proyectos/bogota.jpg"
+      alt="city" usemap="#workmap" width="400" height="379">
+<!-- The usemap value starts with a hash tag # followed by the name of the image map,
+  and is used to create a relationship between the image and the image map. -->
+<map name="workmap">
+  <area shape="rect" coords="34,44,270,350" alt="Computer" href="computer.htm">
+  <area shape="rect" coords="290,172,333,250" alt="Phone" href="phone.htm">
+  <area shape="circle" coords="337,300,44" alt="Cup of coffee" href="coffee.htm">
+</map>
+
+</body>
+</html>

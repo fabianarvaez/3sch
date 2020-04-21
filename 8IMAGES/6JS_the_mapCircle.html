@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<body>
+  <!-- The Areas
+    Then add the clickable areas. A clickable area is defined using an <area> element. -->
+<h2>Image Maps</h2>
+<p>Click on the cup of coffee to go to a new page and read more about the topic:</p>
+
+<img src="workplace.jpg" alt="Workplace" usemap="#workmap" width="400" height="379">
+<!-- Shape
+You must define the shape of the area, and you can choose one of these values:rect - defines a rectangular region
+circle - defines a circular region, poly - defines a polygonal region, default - defines the entire region -->
+<map name="workmap">
+  <area shape="circle" coords="337,300,44" alt="Cup of coffee" href="coffee.htm">
+</map>
+<!-- Circle
+  To add a circle area, first locate the coordinates of the center of the circle:337, 300
+  Now you have enough data to create a clickable circular area
+  This is the area that becomes clickable and will send the user to the page coffee.htm
+  Then specify the radius of the circle:44 pixels -->
+</body>
+</html>
