@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+<!--There are two main purposes for the <picture> element:
+
+1. Bandwidth
+  If you have a small screen or device, it is not necessary to load a large image file.
+  The browser will use the first <source> element with matching attribute values,
+  and ignore any of the following elements.
+
+2. Format Support
+Some browsers or devices may not support all image formats. By using the <picture> element,
+  you can add images of all formats, and the browser will use the first format it
+  recognizes and ignore any of the following.-->
+<h2>The picture Element</h2>
+<picture>
+  <source srcset="img_avatar.png">
+  <source srcset="img_girl.jpg">
+  <img src="img_beatles.gif" alt="Beatles" style="width:auto;">
+</picture>
+
+<p>The picture element can be used when the image format is not supported by all devices.</p>
+<p>The device will use the first image format it supports, and ignore the rest of the images.</p>
+
+</body>
+</html>

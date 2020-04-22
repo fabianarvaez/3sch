@@ -8,7 +8,7 @@ Add a click event on the <area> element to execute a JavaScript function-->
 <p>Click on the cup of coffee to execute a JavaScript function:</p>
 
 <img src="workplace.jpg" alt="Workplace" usemap="#workmap" width="400" height="379">
-
+<!-- You can use the onclick attribute to execute a JavaScript function when the area is clicked-->
 <map name="workmap">
   <area shape="circle" coords="337,300,44" onclick="myFunction()">
 </map>
@@ -18,6 +18,9 @@ function myFunction() {
   alert("You clicked the coffee cup!");
 }
 </script>
+<!-- Use the HTML <map> element to define an image-map
+  Use the HTML <area> element to define the clickable areas in the image-map
+  Use the HTML <img>'s element usemap attribute to point to an image-map -->
 
 </body>
 </html>
